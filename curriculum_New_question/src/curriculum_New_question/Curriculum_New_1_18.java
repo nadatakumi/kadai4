@@ -16,6 +16,12 @@ public class Curriculum_New_1_18 {
         System.out.println("The result of multiplication is: " + result);
     }
 
+    // Q2のオーバーロード：引数を小数にして乗算しコンソールに出力するメソッド
+    public static void multiply(double a, double b) {
+        double result = a * b;
+        System.out.println("The result of multiplying doubles is: " + result);
+    }
+
     // Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッド
     public static void printArray(int[] arr) {
         for (int number : arr) {
@@ -76,6 +82,9 @@ public class Curriculum_New_1_18 {
 
         // Q2：整数の乗算
         multiply(3, 4);
+
+        // Q2のオーバーロード：小数の乗算
+        multiply(2.5, 4.5);
 
         // Q3：配列の要素を順番に出力
         int[] numbers = {1, 2, 3, 4, 5};
