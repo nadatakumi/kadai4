@@ -13,13 +13,13 @@ public class Curriculum_New_1_18 {
     // Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッド
     public static void multiply(int a, int b) {
         int result = a * b;
-        System.out.println("The result of multiplication is: " + result);
+        System.out.println("The result of integer multiplication is: " + result);
     }
 
-    // Q2のオーバーロード：引数を小数にして乗算しコンソールに出力するメソッド
+    // Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を乗算しコンソールに出力するメソッド
     public static void multiply(double a, double b) {
         double result = a * b;
-        System.out.println("The result of multiplying doubles is: " + result);
+        System.out.println("The result of double multiplication is: " + result);
     }
 
     // Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッド
@@ -27,12 +27,6 @@ public class Curriculum_New_1_18 {
         for (int number : arr) {
             System.out.println("Array element: " + number);
         }
-    }
-
-    // Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力するメソッド
-    public static void add(double a, double b) {
-        double result = a + b;
-        System.out.println("The sum of the doubles is: " + result);
     }
 
     // Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して格納した値を順番にコンソールで出力後、格納した値を返すメソッド
@@ -83,15 +77,12 @@ public class Curriculum_New_1_18 {
         // Q2：整数の乗算
         multiply(3, 4);
 
-        // Q2のオーバーロード：小数の乗算
-        multiply(2.5, 4.5);
+        // Q4：小数の乗算
+        multiply(3.5, 2.3);
 
         // Q3：配列の要素を順番に出力
         int[] numbers = {1, 2, 3, 4, 5};
         printArray(numbers);
-
-        // Q4：小数の和算
-        add(3.5, 2.3);
 
         // Q5：ランダムな数値を生成し、順番に出力しリストを返す
         List<Integer> randomNumbers = generateRandomNumbers(5);
